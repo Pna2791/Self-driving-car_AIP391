@@ -10,5 +10,6 @@ Google Drive folder: [Here](https://drive.google.com/drive/folders/14z2X1SkVipk8
 
 #Timeline
 
-![image](https://user-images.githubusercontent.com/87382851/168480817-665dea8d-7fd9-4571-ac6f-cd76c4297ab6.png)
+![image](https://user-images.githubusercontent.com/105489258/169793574-2324b618-0e06-4782-bb65-7392558cce07.png)
+
 

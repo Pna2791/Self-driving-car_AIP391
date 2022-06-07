@@ -11,7 +11,7 @@
 
 # [Timeline](https://docs.google.com/spreadsheets/d/1tI2cD12YLB2aPiFoT3_adGZfaXKjOTtR2en1cJyj28g/edit?usp=sharing)
 
-![image](https://user-images.githubusercontent.com/105489258/169793574-2324b618-0e06-4782-bb65-7392558cce07.png)
+![image](https://user-images.githubusercontent.com/105489258/172327718-c9bc5477-0b70-45fa-86f3-9f818c469a39.png)
 
 
 # [Flow chart](https://app.diagrams.net/#G1B7SDmvY0hIDqaHdsrO-5gehTCWmqGAVJ)

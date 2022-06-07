@@ -11,7 +11,7 @@ img = np.zeros((height, width), dtype=np.uint8)
 # Draw line
 img = cv2.line(img, (0, int((height+lane_size)/2)), (width, int((height+lane_size)/2)), 255, 2)
 img = cv2.line(img, (0, int((height-lane_size)/2)), (width, int((height-lane_size)/2)), 255, 2)
-img = cv2.line(img, (50, 0), (50, height), 255, 2)
+img = cv2.line(img, (20, 0), (20, height), 255, 2)
 
 
 cv2.imshow('map', img)

@@ -17,7 +17,7 @@ def draw_center(background, img, position):
 
     n_white = output.sum()
     yield output
-    yield img_sum+bg_sum == n_white
+    yield img_sum+bg_sum != n_white
 
 
 def draw_rotation(background, img, position, angel):

@@ -26,7 +26,7 @@ class Driving:
         reward = 0
         if self.car.crash:
             reward = -1
-
+        self.show()
         return observations, reward, self.car.crash
 
     def check_point(self):

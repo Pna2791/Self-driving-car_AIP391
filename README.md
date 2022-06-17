@@ -19,3 +19,8 @@
   <img src="https://user-images.githubusercontent.com/87382851/169862843-df417c02-97ff-485f-8590-8b3e131b3d97.png">
 </p>
 
+
+# Problems
+1. Về điều dạy cho xe học:
+- Không thực hiện training cho xe trong môi trường ảo với Deep Q Neural, Double Deep Q Neural hoặc NEAT (Neuroevolution of augmenting topologies). Hiện tại thì NEAT tham khảo qua các dự án dùng NEAT thì thấy thuật toán đó cho kết quả tốt hơn nhưng nhóm chưa có khả năng implementation lại cấu trúc đó.
+- Hiện tại nhóm đang hướng đến phương pháp học các lệnh trên việc điều khiển thực tế.

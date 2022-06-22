@@ -1,6 +1,14 @@
-import cv2
-import numpy as np
 import time
 
-for angle in [-60, -30, 0, 30, 60]:
-    print(angle)
+
+
+list_images = []
+
+
+count  = 0
+t_end = time.time() + 10
+
+while(t_end > time.time()):
+    model.predict()
+    count += 1
+print(count)

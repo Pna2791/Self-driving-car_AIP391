@@ -10,8 +10,8 @@ pi = np.pi
 
 class Driving:
     def __init__(self):
-        self.map = cv2.imread('Map/Map_1.png', 0)
-        self.start_point = (200, 300)
+        self.map = cv2.imread('Map/map.png', 0)
+        self.start_point = (200, 500)
         self.car = Car(self.start_point[0], self.start_point[1])
         self.img_show = None
 
@@ -42,7 +42,7 @@ class Driving:
 class Car:
     max_speed = 10
     delta_angle = 15
-    raw_img = cv2.imread('car.png', 0)
+    raw_img = cv2.imread('Map/car2.png', 0)
 
     def __init__(self, x, y):
         self.img = self.raw_img

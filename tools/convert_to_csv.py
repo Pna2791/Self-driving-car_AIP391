@@ -1,0 +1,40 @@
+import cv2
+import numpy as np
+import glob
+import pandas as pd
+from sklearn.model_selection import train_test_split
+import csv
+
+data_path = "D:/Desktop/AIP391/Lane detection/data/"
+shape_resized = (48, 27)
+
+def creating_csv(filename: str, x_set, y_set, shape : tuple[int, int]):
+    #creating header
+    header = ['label']
+    for i in range(3*shape_resized[0]*shape_resized[1]): header.append(f"px{i}")
+    data = pd.DataFrame(columns= header)
+    for i in range(len(x_set)):
+        print(i)
+        row = [y_set[i]]
+        image = cv2.imread(x_set[i])
+        image = cv2.resize(image, shape)
+        # image = np.asfarray(image)
+        image = np.reshape(image, (-1))
+        for value in image:
+            row.append(value)    
+        data.loc[i] = row
+
+    data.to_csv(data_path+filename+".csv", index=False,)
+
+if __name__ == "__main__":
+    X, y = [], []
+    for i in range(1, 4):
+        x_arr = glob.glob(data_path+f"{str(i)}-test/*")
+        y_arr = np.ones(len(x_arr))*i
+        X = np.append(X, x_arr)
+        y = np.append(y, y_arr)
+
+    creating_csv("test", X, y, shape=shape_resized)
+    # X_train, X_val, y_train, y_val = train_test_split(X, y, test_size=0.2, random_state=42)
+    # creating_csv("train", X_train, y_train, shape=shape_resized)
+    # creating_csv("validation", X_val, y_val, shape=shape_resized)

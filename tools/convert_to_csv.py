@@ -5,8 +5,13 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 import csv
 
-data_path = "D:/Desktop/AIP391/Lane detection/data/"
+# params setting
+data_reading_path = "data/"
 shape_resized = (48, 27)
+train_or_test = "train"
+
+
+#----------------------------------------------------------------------------------------------
 
 def creating_csv(filename: str, x_set, y_set, shape : tuple[int, int]):
     #creating header
@@ -24,17 +29,21 @@ def creating_csv(filename: str, x_set, y_set, shape : tuple[int, int]):
             row.append(value)    
         data.loc[i] = row
 
-    data.to_csv(data_path+filename+".csv", index=False,)
+    data.to_csv(data_reading_path+filename+".csv", index=False,)
 
 if __name__ == "__main__":
     X, y = [], []
     for i in range(1, 4):
-        x_arr = glob.glob(data_path+f"{str(i)}-test/*")
+        x_arr = glob.glob(data_reading_path+f"{train_or_test}/{str(i)}/*.png")
         y_arr = np.ones(len(x_arr))*i
         X = np.append(X, x_arr)
         y = np.append(y, y_arr)
 
-    creating_csv("test", X, y, shape=shape_resized)
-    # X_train, X_val, y_train, y_val = train_test_split(X, y, test_size=0.2, random_state=42)
-    # creating_csv("train", X_train, y_train, shape=shape_resized)
-    # creating_csv("validation", X_val, y_val, shape=shape_resized)
+    print(f"total image: {len(X)}")
+    if train_or_test=="train":
+        X_train, X_val, y_train, y_val = train_test_split(X, y, test_size=0.2, random_state=42)
+        creating_csv("train", X_train, y_train, shape=shape_resized)
+        creating_csv("validation", X_val, y_val, shape=shape_resized)
+    if train_or_test=="test":
+        creating_csv("test", X, y, shape=shape_resized)
+    

@@ -7,6 +7,7 @@
       <excludeFolder url="file://$MODULE_DIR$/Data/Forward" />
       <excludeFolder url="file://$MODULE_DIR$/Data/Left" />
       <excludeFolder url="file://$MODULE_DIR$/Data/Right" />
+      <excludeFolder url="file://$MODULE_DIR$/Driving/dataset" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

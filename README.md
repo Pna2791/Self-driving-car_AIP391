@@ -12,4 +12,8 @@ Google Drive folder: [Here](https://drive.google.com/drive/folders/14z2X1SkVipk8
 
 ![image](https://user-images.githubusercontent.com/105489258/169793574-2324b618-0e06-4782-bb65-7392558cce07.png)
 
+#link gg colab
+https://colab.research.google.com/github/roboflow-ai/yolov5-custom-training-tutorial/blob/main/yolov5-custom-training.ipynb#scrollTo=eaFNnxLJbq4J
 
+
+[link colab](https://colab.research.google.com/github/roboflow-ai/yolov5-custom-training-tutorial/blob/main/yolov5-custom-training.ipynb#scrollTo=eaFNnxLJbq4J)

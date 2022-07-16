@@ -12,10 +12,10 @@
 
 # [Timeline](https://docs.google.com/spreadsheets/d/1tI2cD12YLB2aPiFoT3_adGZfaXKjOTtR2en1cJyj28g/edit?usp=sharing)
 
-![image](https://user-images.githubusercontent.com/81899659/175258708-ed31e50e-06be-44be-8808-a3b0a0190e4c.png)
+![image](![image](https://user-images.githubusercontent.com/105489258/179367612-98355410-3088-470d-b4e0-662635247996.png))
 
 # [Flow chart](https://app.diagrams.net/#G1B7SDmvY0hIDqaHdsrO-5gehTCWmqGAVJ)
 <p align="center">
-  <img src="![image](https://user-images.githubusercontent.com/105489258/179367496-17d9af19-b563-4fa9-a5b9-05d1f44ab96a.png)">
+  <img src="![image](https://user-images.githubusercontent.com/105489258/179367587-0b4f3450-a996-4796-a41b-3270b29ffacc.png)">
 </p>
 

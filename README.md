@@ -16,6 +16,6 @@
 
 # [Flow chart](https://app.diagrams.net/#G1B7SDmvY0hIDqaHdsrO-5gehTCWmqGAVJ)
 <p align="center">
-  <img src="![image](https://user-images.githubusercontent.com/105489258/179367453-6a5f77a0-349e-4eb0-8320-9d5e1341f468.png)">
+  <img src="![image](https://user-images.githubusercontent.com/105489258/179367496-17d9af19-b563-4fa9-a5b9-05d1f44ab96a.png)">
 </p>
 

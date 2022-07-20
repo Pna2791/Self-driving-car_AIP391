@@ -4,5 +4,11 @@
 #
 #
 
-import torch
-print(torch.cuda.is_available())
+# import torch
+# print(torch.cuda.is_available())
+
+import tensorflow as tf
+ten = tf.test.is_gpu_available(
+    cuda_only=True, min_cuda_compute_capability=None
+)
+print(ten)

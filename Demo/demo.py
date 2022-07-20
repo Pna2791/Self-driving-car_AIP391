@@ -10,6 +10,7 @@ import cv2
 
 
 flag_send = False
+flag_save = False
 ind = 0
 
 speed, speed_min = (60, 40)
@@ -85,7 +86,8 @@ def stop():
                 frame = cv2.putText(frame, str(th) + ' ' + class_names[index], box[0], cv2.FONT_HERSHEY_SIMPLEX, 1, red, 2, cv2.LINE_AA,)
 
         frame = cv2.putText(frame, 'STOP', (10, 150), cv2.FONT_HERSHEY_SIMPLEX, 3, red, 3, cv2.LINE_AA,)
-        save_video(frame, ind)
+        if flag_save:
+            save_video(frame, ind)
         cv2.imshow('frame', frame)
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
@@ -151,7 +153,8 @@ def run():
                         flag_unmax = val
 
         frame = draw_infor(frame)
-        save_video(frame, ind)
+        if flag_save:
+            save_video(frame, ind)
         cv2.imshow('frame', frame)
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break

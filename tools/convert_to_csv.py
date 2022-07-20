@@ -6,8 +6,10 @@ from sklearn.model_selection import train_test_split
 import csv
 
 # params setting
-data_reading_path = "data/"
-shape_resized = (48, 27)
+data_reading_path = "D:\Desktop\AIP391\Lane detection\data/traffic signs data/50x50 bboxs/"
+resize_step = False
+num_of_classes = 26
+shape_resized = (50, 50)
 train_or_test = "train"
 
 
@@ -22,7 +24,8 @@ def creating_csv(filename: str, x_set, y_set, shape : tuple[int, int]):
         print(i)
         row = [y_set[i]]
         image = cv2.imread(x_set[i])
-        image = cv2.resize(image, shape)
+        if resize_step:
+            image = cv2.resize(image, shape)
         # image = np.asfarray(image)
         image = np.reshape(image, (-1))
         for value in image:
@@ -33,7 +36,7 @@ def creating_csv(filename: str, x_set, y_set, shape : tuple[int, int]):
 
 if __name__ == "__main__":
     X, y = [], []
-    for i in range(1, 4):
+    for i in range(num_of_classes):
         x_arr = glob.glob(data_reading_path+f"{train_or_test}/{str(i)}/*.png")
         y_arr = np.ones(len(x_arr))*i
         X = np.append(X, x_arr)
